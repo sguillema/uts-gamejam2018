@@ -16,7 +16,7 @@ sysinfo.txt
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 [Ee]xported[Oo]bj/
-.vs/
+.vs
 /*.userprefs
 /*.csproj
 /*.pidb
