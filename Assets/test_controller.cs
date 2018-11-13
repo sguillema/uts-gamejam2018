@@ -12,11 +12,20 @@ public class test_controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(Global.POI1Found){
+			GetComponent<Renderer>().enabled = true;
+		} else {
+			GetComponent<Renderer>().enabled = false;
+		}
 	}
 
 	void OnMouseDown() {
-		Debug.Log("You clicked me");	
-		SceneManager.LoadScene("Sandbox");
+		if(Global.POI1Found){
+			Debug.Log("You clicked me");
+			SceneManager.LoadScene("Sandbox");
+			// if (gameObject.tag == GameObject.Find("New Sprite").tag) {
+			// 	Debug.Log("You clicked the left lever!");
+			// }
+		}
 	}
 }
