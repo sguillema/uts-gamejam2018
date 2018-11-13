@@ -31,19 +31,19 @@ public class PlayerMovement : MonoBehaviour {
 
 		//Controls
 		if(Input.GetKey(KeyCode.W)){
-			zvel = 10;
+			zvel = 3;
 			angle = Vector3.SignedAngle(measureVector,rb.velocity, Vector3.up);
 		}
 		if(Input.GetKey(KeyCode.S)){
-			zvel = -10;
+			zvel = -3;
 			angle = Vector3.SignedAngle(measureVector,rb.velocity, Vector3.up);
 		}
 		 if(Input.GetKey(KeyCode.A)){
-			xvel = -10;
+			xvel = -3;
 			angle = Vector3.SignedAngle(measureVector,rb.velocity, Vector3.up);
 		}
 		 if(Input.GetKey(KeyCode.D)){
-			xvel = 10;
+			xvel = 3;
 			angle = Vector3.SignedAngle(measureVector,rb.velocity, Vector3.up);
 		} 
 
