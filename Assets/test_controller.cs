@@ -22,7 +22,7 @@ public class test_controller : MonoBehaviour {
 	void OnMouseDown() {
 		if(Global.POI1Found){
 			Debug.Log("You clicked me");
-			SceneManager.LoadScene("Sandbox");
+			SceneManager.LoadScene("Intro_2");
 			// if (gameObject.tag == GameObject.Find("New Sprite").tag) {
 			// 	Debug.Log("You clicked the left lever!");
 			// }
